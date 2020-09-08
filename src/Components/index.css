@@ -6,33 +6,55 @@
     text-decoration: none;
 }
 .header-icon{
-    color:#f3a538;
+    color:orange;
     widows: 42px;
     height: 42px;
     line-height: 42px;
     font-size: 22px;
 }
+
 .text-wrap{
     line-height: 1.2;
     padding: 10px;
-    color: black;
+    color: orange;
+    
 }
+/*navbar sty;les*/
 .navbar{
-    background-color:#232b2b;
+    background-color: black;
+   
+}
+.active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid pink;
+    box-shadow: 0 1px 0 0 pink;}
+    
+.navbar-brand-logo{
+    width: 80px;
+    height: 80px;
 }
 
 .list-unstyled > li > a {
     text-decoration: none;
     font-size: 18px;
 }
-.my-catagories{
-    background-color:#03b2dd ;
-    padding: 10px;
-    border-radius: 5px;
-}
+
 .bg-footer{
-    background-color: #232b2b;
+    background-color: black;
 }
 .nav-text{
-    color: white;
+    color: orange;
+    text-emphasis: bold;
+    
+}
+.second-section{
+    border-radius: 20px;
+    margin: auto;
+}
+.hello{
+    background-color: snow;
+    color:white;
+    height: 568px ;
+}
+.row-in-navbar{
+    width: 90vw;
 }

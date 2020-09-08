@@ -1,0 +1,33 @@
+.subnavbar {
+    background-color: black;
+    display:flex;
+flex-direction:row;
+}
+.subnavbar a {
+margin: 10px;
+font-size: 16px;
+font-family: 'MuseoModerno', cursive;
+color: black;
+text-align: center;
+padding: 4px 6px;
+text-decoration: none;
+border-radius: 5px;
+
+}
+  
+.subnavbar a:hover {
+background-color: rgba(237, 44, 73, 0.61);
+border-raduis: 20px;
+}
+
+.subnav-content {
+    text-align: center;
+    transition:0.15s;
+  }
+
+.subnav-content:hover {
+    transform: scaleY(1.2);
+    transform: scaleX(1.05);
+    transform-origin: top;
+    border-radius: 200px;
+}

@@ -1,21 +1,33 @@
 import React from 'react';
 import logo from './logo.png'
 import './index.css'
-
+import AppContext from '../AppContext'
+import {Link} from 'react-router-dom'
 class Navbar extends React.Component{
     render(){
         return(
             <div>
-                 <nav className="navbar fixed-top shadow-sm  navbar-expand-lg" >
-                     <div className="container">
-                         <div className="row">
+                 <nav className="navbar fixed-top  navbar-expand-lg" >
+                     <div className="container-fluid ">
+                         <div className="row row-in-navbar">
+                             {/* navbar logo */}
                              <div className="col-sm-2">
-                                 <a className="" href="#">
-                                     <img className="w-100 h-100 shadow-md " src={logo} alt="logo"/>
-                                 </a>
+                                 {/*navbar logo link to home page itse;f*/}
+                                 <Link  to="/">
+                                    <img className=" shadow-md navbar-brand-logo ml-2 " src={logo} alt="logo"/>
+                                 </Link>
                              </div>
-                             <div className="col-sm-2"></div>
-                             <div className="col-sm-8">
+                             {/* search bar */}
+                             <div className="col-sm-7">
+                                    <div>
+                                        <form className="form-inline d-flex justify-content-center lg-form form-lg active-cyan-2 mt-2">
+                                            <input className="form-control form-control-sm mr-3 w-75 h-100" type="text" placeholder="Search" aria-label="Search" />
+                                            <i className="fas fa-search" aria-hidden="true" />
+                                        </form>
+                                    </div>
+                             {/* 3 line burger button */}
+                             </div>
+                             <div className="col-sm-3 float-right">
                                  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcontent"
                                  aria-expanded="false">
                                      <i className="fas fa-bars header-icon"/>
@@ -25,7 +37,8 @@ class Navbar extends React.Component{
 
 
                                         <div className="dropdown">
-                                        <a href="#" className="header-text" data-toggle="dropdown" data-offset="20,10" aria-haspopup="true" aria-expanded="false">
+                                            {/*link to form itself*/}
+                                        <Link className="header-text" to="/" className="header-text" data-toggle="dropdown" data-offset="20,10" aria-haspopup="true" aria-expanded="false">
                                         <div className="d-inline-flex">
                                             <div className="icon-wrap">
                                                  <i className="header-icon fas fa-user"/>
@@ -35,7 +48,7 @@ class Navbar extends React.Component{
                                         <i className="fas fa-caret-down"/>
                                         </div>
                                         </div>
-                                        </a>
+                                        </Link>
                                         <div className="dropdown-menu">
                                             <form className="px-4 py-3">
                                                 <div className="form-group">
@@ -49,25 +62,25 @@ class Navbar extends React.Component{
                                                 <button type="button" className="btn btn-primary" >Sign In</button>
                                             </form>
                                             <hr/>
-                                                <a className="dropdown-item" href="#" >Dont have an account yet then sign up!! </a>
+                                                <Link className="dropdown-item" to="/" >Dont have an account yet then sign up!! </Link>
                                         </div>
                                         </div>
                                     </div>
                                     <div className="col-xs-4">
-                                        <a href="#" className="header-text">
+                                        <Link to="/cart" className="header-text">
                                         <div className="d-inline-flex">
                                         <div className="icon-wrap">
                                                 <i className="header-icon fas fa-shopping-cart"/>
                                             </div>
                                         <div className="text-wrap">
-                                            <span className="small round badge badge-secondary">0</span>
+                                            <span className="small round badge badge-secondary">{this.context.cart.length}</span>
                                             <div className="nav-text">Cart</div>
                                         </div>
                                         </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="col-xs-4">
-                                        <a href ="#" className="header-text">
+                                        <Link to ="/wishlist" className="header-text">
                                         <div className="d-inline-flex">
                                         <div className="icon-wrap">
                                                 <i className="header-icon fas fa-heart"/>
@@ -77,7 +90,7 @@ class Navbar extends React.Component{
                                             <div className='nav-text'>Wishlist</div>
                                         </div>
                                         </div>
-                                        </a>
+                                        </Link>
                                     </div> 
                                 </div>
                              </div>
@@ -90,5 +103,5 @@ class Navbar extends React.Component{
         )
     }
 }
-
+Navbar.contextType = AppContext
 export default Navbar;

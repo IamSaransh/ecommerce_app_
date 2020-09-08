@@ -1,5 +1,5 @@
 body{
-    margin-top:12%;
+    margin-top:96px;
     background-color: #f5f5f5;
     
     
@@ -8,3 +8,11 @@ body{
 .card{
     box-shadow: 0px 2px 2px 0px grey;
 }
+
+/*gredient between the navbar and subnav rainbow*/
+#grad1 {
+    height: 3px;
+    background-color:orange; /* For browsers that do not support gradients */
+    
+  }
+
