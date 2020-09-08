@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 import slide1 from '../homeAssets/slide1.jpg'
 import slide2 from '../homeAssets/slide2.jpg'
 import slide3 from '../homeAssets/slide3.jpg'

@@ -3,7 +3,7 @@ import paymentIcon from '../homeAssets/payment.png'
 import returnIcon from '../homeAssets/return.png'
 import trustIcon from '../homeAssets/trust.png'
 import './index.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 class SecondSection extends React.Component{
     render(){

@@ -10,6 +10,7 @@ import SideImage from './homeAssets/sideimage.png'
 import Abc1 from './homeAssets/abc1.png'
 import Abc2 from './homeAssets/abc2.png'
 import HomeItem from './HomeItem'
+import 'bootstrap/dist/css/bootstrap.min.css'
 // import the data from server without worryig about child parent nesting!
 import AppContext from './AppContext'
 
@@ -20,7 +21,7 @@ class Home extends React.Component{
         return(
             <div>
                 <Navbar/>
-                {/* //gredient with class gred 1*/}
+                
                 <div id="grad1"></div>
                 
                 <div className ="container-fluid m-0 p-0">

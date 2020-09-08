@@ -3,6 +3,7 @@ import logo from './logo.png'
 import './index.css'
 import AppContext from '../AppContext'
 import {Link} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
 class Navbar extends React.Component{
     render(){
         return(
@@ -38,7 +39,7 @@ class Navbar extends React.Component{
 
                                         <div className="dropdown">
                                             {/*link to form itself*/}
-                                        <Link className="header-text" to="/" className="header-text" data-toggle="dropdown" data-offset="20,10" aria-haspopup="true" aria-expanded="false">
+                                        <Link className="header-text" to="/"  data-toggle="dropdown" data-offset="20,10" aria-haspopup="true" aria-expanded="false">
                                         <div className="d-inline-flex">
                                             <div className="icon-wrap">
                                                  <i className="header-icon fas fa-user"/>

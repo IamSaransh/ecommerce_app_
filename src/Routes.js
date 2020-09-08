@@ -4,7 +4,7 @@ import Home from './Home'
 import AppContext from './AppContext'
 import { getProducts } from './repo' 
 import Cart from './Pages/cart'
-import CartItem from './Pages/cartItem'
+
 
  
 

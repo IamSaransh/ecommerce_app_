@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import AppContext from '../AppContext'
 import CartItem from './cartItem'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 class Cart extends React.Component{
     render(){
 let total = 0;
